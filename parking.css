@@ -1,0 +1,28 @@
+body{
+    background-color:burlywood;
+}
+#data,
+#data3{
+    margin: 50px;
+    margin-left: 200px;
+}
+#data2{
+    padding: 15px;
+}
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color: plum;
+}
+.container div{
+     background-color: lightgrey;
+     width: 100px;
+     height: 150px;
+     margin: 5px;
+     flex-basis: 16%;
+     text-align:center;
+     padding-top: 50px;
+}

@@ -6,6 +6,7 @@ function setBay() {
         vehicleList.push(vehicleNo);
         setBayValues();
         setVehicleList();
+        setExitList();
     } else {
         let dup = "Noduplicate";
         for (let idx = 0; idx < vehicleList.length; idx++) {
@@ -19,14 +20,8 @@ function setBay() {
             vehicleList.push(vehicleNo);
             setBayValues();
             setVehicleList();
+            setExitList();
         }
-    }
-    if (vehicleList.length <= 10) {
-        let getExitList = document.getElementById('exitList');
-        let option2 = document.createElement('option');
-        option2.text = vehicleNo;
-        option2.value = vehicleNo;
-        getExitList.appendChild(option2);
     }
 }
 function getBay() {
@@ -110,5 +105,15 @@ function setBayValues() {
         vehicleList.pop();
         document.getElementById("vehicleNo").value = "Slot is full";
         document.getElementById("vehicleNo").disabled = "true";
+    }
+}
+function setExitList(){
+    let vehicleNo = document.getElementById("vehicleNo").value;
+    if (vehicleList.length <= 10) {
+        let getExitList = document.getElementById('exitList');
+        let option2 = document.createElement('option');
+        option2.text = vehicleNo;
+        option2.value = vehicleNo;
+        getExitList.appendChild(option2);
     }
 }

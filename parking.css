@@ -1,5 +1,5 @@
 body{
-    background-color:burlywood;
+    background-color:rgba(240, 127, 206, 0.475);
 }
 #data,
 #data3{
@@ -11,18 +11,19 @@ body{
 }
 .container{
     display: flex;
-    height: 100%;
+    height: 400px;
     width: 100%;
     flex-wrap: wrap;
+    align-items: center;
     justify-content:space-around;
-    background-color: plum;
+    background-color: whitesmoke;
 }
 .container div{
-     background-color: lightgrey;
+     background-color:wheat;
      width: 100px;
-     height: 150px;
+     height: 180px;
      margin: 5px;
      flex-basis: 16%;
      text-align:center;
-     padding-top: 50px;
+     padding-top: 65px;
 }
